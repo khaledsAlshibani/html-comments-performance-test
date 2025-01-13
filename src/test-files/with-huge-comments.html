@@ -1,0 +1,477 @@
+<!-- 
+  This page is designed to test the performance of an HTML document with normal comments.
+
+  The content here is same as the with-medium-comments.html page but with some increased
+  comments.
+-->
+
+<!doctype html>
+
+<!-- 
+HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit.
+It can be as complicated or as simple as the web developer wants it to be.
+HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way.
+The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.
+
+mdn web docs: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax
+-->
+<html lang="en">
+  <!-- 
+    The head of an HTML document is the part that is not displayed in the web browser when the page is loaded.
+    It contains metadata information such as the page <title>, links to CSS (if you choose to style your HTML content with CSS),
+    links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document).
+    Web browsers use information contained in the head to render the HTML document correctly.
+
+    mdn web docs: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata
+  -->
+  <head>
+    <!-- 
+      The meta tag is used to define the metadata of the page.
+
+      Metadata is data that describes data, and HTML has an "official" way of adding metadata to a document — the <meta> element.
+      Of course, the other stuff we are talking about in this article could also be thought of as metadata too.
+      There are a lot of different types of <meta> elements that can be included in your page's <head>, but we won't try to explain them all at this stage, as it would just get too confusing.
+      Instead, we'll explain a few things that you might commonly see, just to give you an idea.
+
+      mdn web docs: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata
+    -->
+    <!-- 
+      This attribute declares the document's character encoding.
+      If the attribute is present, its value must be an ASCII case-insensitive match for the string "utf-8", because UTF-8 is the only valid encoding for HTML5 documents.
+      <meta> elements which declare a character encoding must be located entirely within the first 1024 bytes of the document.
+
+      mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+    -->
+    <meta charset="UTF-8" />
+
+    <!-- 
+      The browser's viewport is the area of the window in which web content can be seen.
+      This is often not the same size as the rendered page, in which case the browser provides scrollbars for the user to scroll around and access all the content.
+
+      Some mobile devices and other narrow screens render pages in a virtual window or viewport, which is usually wider than the screen, and then shrink the rendered result down so it can all be seen at once. Users can then zoom and pan to look more closely at different areas of the page. For example, if a mobile screen has a width of 640px, pages might be rendered with a virtual viewport of 980px, and then it will be shrunk down to fit into the 640px space.
+
+      This is done because not all pages are optimized for mobile and break (or at least look bad) when rendered at a small viewport width.
+      This virtual viewport is a way to make non-mobile-optimized sites in general look better on narrow screen devices.
+
+      However, this mechanism is not so good for pages that are optimized for narrow screens using media queries — if the virtual viewport is 980px for example, media queries that kick in at 640px or 480px or less will never be used, limiting the effectiveness of such responsive design techniques.
+      The viewport <meta> element mitigates this problem of virtual viewport on narrow screen devices.
+
+      mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+      The title tag is used to define the title of the page.
+
+      The contents of a page title can have significant implications for search engine optimization (SEO).
+      In general, a longer, descriptive title performs better than short or generic titles.
+      The content of the title is one of the components used by search engine algorithms to decide the order in which to list pages in search results.
+      Also, the title is the initial "hook" by which you grab the attention of readers glancing at the search results page.
+
+      mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title
+    -->
+    <title>Without Comments Test Page</title>
+  </head>
+
+  <!-- 
+    The <body> HTML element represents the content of an HTML document. There can be only one <body> element in a document.
+
+    mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body
+  -->
+  <body>
+    <!-- header: start -->
+    <!-- 
+      The header in HTML is usually used to display the title of the page and some meta information.
+      It is usually placed at the top of the page.
+    -->
+    <!-- 
+      The <header> HTML element represents introductory content, typically a group of introductory or navigational aids.
+      It may contain some heading elements but also a logo, a search form, an author name, and other elements.
+
+      mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header
+    -->
+    <header>
+      <!-- 
+        The h1 tag is used to display the title of the page. It stands for "heading 1".
+        It should be used only once in the page.
+      -->
+      <!-- 
+        The <h1> to <h6> HTML elements represent six levels of section headings.
+        <h1> is the highest section level and <h6> is the lowest.
+        By default, all heading elements create a block-level box in the layout, starting on a new line and taking up the full width available in their containing block.
+
+        mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
+      -->
+      <h1>Performance Test: Without Comments</h1>
+
+      <!-- 
+        The p tag is used to display the description of the page. It stands for "paragraph".
+      -->
+      <!-- 
+        The <p> HTML element represents a paragraph.
+        Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
+
+        Paragraphs are block-level elements, and notably will automatically close if another block-level element is parsed before the closing </p> tag.
+
+        mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
+      -->
+      <p>
+        This page is designed to test the performance of an HTML document without any comments. The
+        content here is large and structured.
+      </p>
+    </header>
+    <!-- header: end -->
+
+    <!-- main: start -->
+    <!-- 
+      The main tag is used to wrap the main content of the page. It stands for "main content".
+      It should be used only once in the page.
+    -->
+    <!-- 
+      The <main> HTML element represents the dominant content of the <body> of a document.
+      The main content area consists of content that is directly related to or expands upon
+      the central topic of a document, or the central functionality of an application.
+
+      mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main
+    -->
+    <main>
+      <!-- section 1: start -->
+      <!-- 
+        The section tag is used to wrap the content of the section. It stands for "section".
+        It should contain a heading.
+      -->
+      <!-- 
+        The <section> HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it.
+        Sections should always have a heading, with very few exceptions.
+
+        <section> is a generic sectioning element, and should only be used if there isn't a more specific element to represent it.
+        As an example, a navigation menu should be wrapped in a <nav> element, but a list of search results or a map display and its controls don't have specific elements, and could be put inside a <section>.
+
+        mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+      -->
+      <section>
+        <!-- 
+          The h2 tag is used to display the title of the section. It stands for "heading 2".
+        -->
+        <h2>Introduction</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+      </section>
+      <!-- section 1: end -->
+
+      <!-- section 2: start -->
+      <section>
+        <h2>Images</h2>
+
+        <!-- 
+          The img tag is used to display an image. It stands for "image".
+        -->
+        <!-- 
+          The <img> HTML element embeds an image into the document.
+          The src attribute is required, and contains the path to the image you want to embed.
+          The alt attribute holds a textual replacement for the image, which is mandatory and incredibly useful for accessibility — screen readers read the attribute value out to their users so they know what the image means.
+          Alt text is also displayed on the page if the image can't be loaded for some reason: for example, network errors, content blocking, or link rot.
+
+          mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+        -->
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+        <img src="image/placeholder.webp" alt="Placeholder Image" width="600" height="400" />
+      </section>
+      <!-- section 2: end -->
+
+      <!-- section 3: start -->
+      <section>
+        <h2>Table</h2>
+        <!-- table: start -->
+        <!-- 
+          The table tag is used to display a table. It stands for "table".
+        -->
+        <!-- 
+          The <table> HTML element represents tabular data—that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.
+
+          mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+        -->
+        <table>
+          <!-- 
+            The thead tag is used to display the header of the table. It stands for "table header".
+          -->
+          <!-- 
+            The <thead> HTML element encapsulates a set of table rows (<tr> elements), indicating that they comprise the head of a table with information about the table's columns.
+            This is usually in the form of column headers (<th> elements).
+
+            mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead
+          -->
+          <thead>
+            <!-- 
+              The tr tag is used to display a row in the table. It stands for "table row".
+            -->
+            <!-- 
+              The <tr> HTML element represents a row of cells in a table.
+
+              mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr
+            -->
+            <tr>
+              <!-- 
+                The th tag is used to display a header cell in the table. It stands for "table header".
+              -->
+              <!-- 
+                The <th> HTML element defines a cell as the header of a group of table cells and may be used as a child of the <tr> element.
+                The exact nature of this group is defined by the scope and headers attributes.
+
+                mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th
+              -->
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+              <th>Header 4</th>
+            </tr>
+          </thead>
+          <!-- 
+            The tbody tag is used to display the body of the table. It stands for "table body".
+          -->
+          <!-- 
+            The <tbody> HTML element encapsulates a set of table rows (<tr> elements), indicating that they comprise the body of a table's (main) data.
+
+            mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody
+          -->
+          <tbody>
+            <tr>
+              <!-- 
+                The td tag is used to display a data cell in the table. It stands for "table data".
+              -->
+              <!-- 
+                The <td> HTML element defines a cell of a table that contains data and may be used as a child of the <tr> element.
+
+                mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
+              -->
+              <td>Data 1</td>
+              <td>Data 2</td>
+              <td>Data 3</td>
+              <td>Data 4</td>
+            </tr>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+              <td>Data 3</td>
+              <td>Data 4</td>
+            </tr>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+              <td>Data 3</td>
+              <td>Data 4</td>
+            </tr>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+              <td>Data 3</td>
+              <td>Data 4</td>
+            </tr>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+              <td>Data 3</td>
+              <td>Data 4</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- table: end -->
+      </section>
+      <!-- section 3: end -->
+
+      <!-- section 4: start -->
+      <section>
+        <h2>List Items</h2>
+        <!-- 
+          The ul tag is used to display a list. It stands for "unordered list".
+        -->
+        <!-- 
+          The <ul> HTML element represents an unordered list of items, typically rendered as a bulleted list.
+
+          mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+        -->
+        <ul>
+          <!-- 
+            The li tag is used to display a list item. It stands for "list item".
+          -->
+          <!-- 
+            The <li> HTML element is used to represent an item in a list.
+            It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>).
+            In menus and unordered lists, list items are usually displayed using bullet points.
+            In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.
+
+            mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
+          -->
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+          <li>Item 6</li>
+          <li>Item 7</li>
+          <li>Item 8</li>
+          <li>Item 9</li>
+          <li>Item 10</li>
+        </ul>
+      </section>
+      <!-- section 4: end -->
+
+      <!-- section 5: start -->
+      <section>
+        <h2>Form</h2>
+        <!-- 
+          The form tag is used to display a form. It stands for "form".
+        -->
+        <!-- 
+          The <form> HTML element represents a document section containing interactive controls for submitting information.
+
+          mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+        -->
+        <form action="#" method="POST">
+          <!-- 
+            The label tag is used to display a label for the input field. It stands for "label".
+          -->
+          <!-- 
+            The <label> HTML element represents a caption for an item in a user interface.
+
+            mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+          -->
+          <label for="name">Name:</label>
+          <!-- 
+            The input tag is used to display an input field. It stands for "input".
+          -->
+          <!-- 
+            The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user;
+            a wide variety of types of input data and control widgets are available, depending on the device and user agent.
+            The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.
+
+            mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+          -->
+          <input type="text" id="name" name="name" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="message">Message:</label>
+          <!-- 
+            The textarea tag is used to display a textarea field.
+          -->
+          <!-- 
+            The <textarea> HTML element represents a multi-line plain-text editing control,
+            useful when you want to allow users to enter a sizeable amount of free-form text,
+            for example a comment on a review or feedback form.
+
+            mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea
+          -->
+          <textarea id="message" name="message"></textarea><br /><br />
+
+          <!-- 
+            The button tag is used to display a button.
+          -->
+          <!-- 
+            The <button> HTML element is an interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology.
+            Once activated, it then performs an action, such as submitting a form or opening a dialog.
+
+            By default, HTML buttons are presented in a style resembling the platform the user agent runs on, but you can change buttons' appearance with CSS.
+
+            mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
+          -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <!-- section 5: end -->
+
+      <!-- section 6: start -->
+      <section>
+        <h2>Text Block</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+          libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+          imperdiet. Duis sagittis ipsum.
+        </p>
+      </section>
+      <!-- section 6: end -->
+    </main>
+    <!-- main: end -->
+
+    <!-- footer: start -->
+    <!-- 
+      The footer tag is used to display the footer of the page. It is usually placed at the bottom of the page.
+
+      Usually contains a copyright notice.
+    -->
+    <!-- 
+      The <footer> HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element.
+      A <footer> typically contains information about the author of the section, copyright data or links to related documents.
+
+      mdn web docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer
+    -->
+    <footer>
+      <p>© 2025 Performance Test</p>
+    </footer>
+    <!-- footer: end -->
+  </body>
+</html>
