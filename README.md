@@ -1,6 +1,6 @@
 <h1>HTML Comments Performance Test</h1>
 
-> This project analyzes the performance impact of HTML comments by comparing identical pages with different comment densities. It provides detailed metrics on load times, rendering performance, and memory usage to help developers make informed decisions about HTML comments in production.
+> This project was born out of curiosity about the performance impact of HTML comments. While I initially hypothesized that only extremely large comments would affect performance, I wanted to validate this assumption through systematic testing. Despite searching for reliable information on this topic, I found no clear, evidence-based answers. **Interestingly, browser Lighthouse DevTools consistently reports a 100% performance score for all test files in this repository, regardless of comment size or presence.** You can examine these test files [here](./src/test-files/). This project tries to better understanding of how HTML comments might influence page performance under various conditions.
 
 ---
 
